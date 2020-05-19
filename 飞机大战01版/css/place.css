@@ -1,0 +1,109 @@
+@charset "utf-8";
+*{margin:0;padding:0;}
+ul{list-style: none;}
+#wrap{
+    width: 400px;
+    height: 600px;
+    border: 2px solid skyblue;
+    margin:60px auto 0 ;
+    border-radius: 5px;
+    background: url("../img/bg01.png") no-repeat center/cover;
+}
+#box.animate{
+    animation: run 5s infinite linear;
+}
+@keyframes run{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 0 768px;
+    }
+}
+#box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+/* #box .title{
+    position: absolute;
+    width: 470px;
+    height: 170px;
+    margin:10px 10px 10px 10px;
+} */
+#box h1{
+    padding-top: 165px;
+    color: rgba(0, 255, 255, 0.747);
+    text-shadow: 0 0 4px #fff,
+            0 -5px 4px #ff3,
+            2px -10px 6px #f80,
+            2px -25px 18px #f20;
+}
+#box .option{
+    width: 150px;
+    height: 30px;
+    color: rgb(17, 198, 253);
+    margin: 50px auto 0;
+    line-height: 30px;
+    font-weight: bold;
+    border-radius: 10px;
+    /* opacity: 0.5; */
+    cursor: pointer;
+    box-shadow: 0 0 10px #ddd;
+}
+#box .option:hover{
+    color:rgba(0, 0, 0, 0.719);
+    background-color:rgb(17, 198, 253) ;
+    
+}
+#box img{
+    /* 改变飞机的位置 */
+    position: absolute;
+}
+#box .score{
+    position: absolute;
+    left:0;
+    top:0;
+    color:skyblue;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+#box .overBox{
+    position: absolute;
+    width: 80%;
+    height: 90%;
+    top: 0;
+    left:0;
+    bottom:0;
+    right:0;
+    margin:auto;
+    background-image: url("../img/0.jpg");
+}
+#box .overBox h2{
+    font-size: 45px;
+    margin-top: 165px;
+    color: rgba(83, 132, 238, 0.562);
+    text-shadow: 0 0 20px #000; 
+}
+#box .overBox p{
+    margin-top: 50px;
+    font-weight: bold;
+    font-size:24px;
+    color:azure;
+    text-shadow: 0 0 10px #fff;
+}
+#box .start{
+    width: 70%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: skyblue;
+    color:#fff;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ddd;
+    margin:80px auto 0;
+    cursor: pointer;
+}
